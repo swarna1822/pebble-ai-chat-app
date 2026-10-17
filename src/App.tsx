@@ -75,7 +75,7 @@ export default function App() {
         </Drawer>
 
         <Box sx={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", maxWidth: 840, mx: "auto" }}>
-          <AppBar position="static" color="transparent" elevation={0} sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <AppBar position="static" color="transparent" elevation={2} sx={{ borderBottom: 1, borderColor: "divider" }}>
             <Toolbar variant="dense">
               {!isDesktop && (
                 <IconButton edge="start" aria-label="Open chat history" onClick={() => setDrawerOpen(true)} sx={{ mr: 1 }}>
@@ -83,7 +83,7 @@ export default function App() {
                 </IconButton>
               )}
               <Typography variant="h6" sx={{ flex: 1, fontSize: 17, fontWeight: 600 }}>
-                Pebble AI 
+                Pebble AI assitant
               </Typography>
               <Chip size="small" label={provider.name} variant="outlined" />
             </Toolbar>
