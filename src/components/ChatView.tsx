@@ -30,14 +30,9 @@ export default function ChatView({ messages, busy, demo, providerName, onSend, o
   return (
     <Box ref={ref} aria-live="polite" sx={{ flex: 1,overflowY:'auto', px: 2, py: 2.5, display: "flex", flexDirection: "column", gap: 3 }}>
       {messages.length === 0 ? (
-        <Box sx={{ m: "auto", textAlign: "center", maxWidth: 420 }}>
+        <Box  sx={{ m: "auto", textAlign: "center", maxWidth: 420, gap:10 }}>
           <Typography variant="h5" fontWeight={600} gutterBottom>
-            Ask anything
-          </Typography>
-          <Typography color="text.secondary" sx={{ mb: 2.5 }}>
-            {demo
-              ? "Demo mode: replies are fake. Add a free API key in Settings for real answers."
-              : `Connected to ${providerName}.`}
+            Ask anything...
           </Typography>
           <Stack spacing={1}>
             {STARTERS.map((s) => (

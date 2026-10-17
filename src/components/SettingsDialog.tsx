@@ -18,7 +18,7 @@ export default function SettingsDialog({ settings, onSave, onClose }: Props) {
       <DialogTitle>Settings</DialogTitle>
       <DialogContent>
         <Stack spacing={2} sx={{ pt: 1 }}>
-          <TextField select label="Provider" value={draft.provider} onChange={(e) => setDraft({ ...draft, provider: e.target.value as ProviderId })}>
+          <TextField select label="Models" value={draft.provider} onChange={(e) => setDraft({ ...draft, provider: e.target.value as ProviderId })}>
             {(Object.keys(PROVIDERS) as ProviderId[]).map((k) => (
               <MenuItem key={k} value={k}>
                 {PROVIDERS[k].name}

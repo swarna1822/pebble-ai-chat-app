@@ -85,7 +85,7 @@ export default function App() {
               <Typography variant="h6" sx={{ flex: 1, fontSize: 17, fontWeight: 600 }}>
                 Pebble AI assitant
               </Typography>
-              <Chip size="small" label={provider.name} variant="outlined" />
+              {/* <Chip size="small" label={provider.name} variant="outlined" /> */}
             </Toolbar>
           </AppBar>
 
