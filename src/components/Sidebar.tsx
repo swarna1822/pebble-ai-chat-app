@@ -3,6 +3,8 @@ import AddIcon from "@mui/icons-material/Add";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import SettingsIcon from "@mui/icons-material/Settings";
 import type { Chat } from "../types";
+import logo from '../Assets/Friendly Pebble Chat Logo.png'
+import SidebarLogo from "./SidebarLogo";
 
 interface Props {
   chats: Chat[];
@@ -17,6 +19,9 @@ export default function Sidebar({ chats, activeId, onNew, onSelect, onDelete, on
   return (
     <Box sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
       <Box sx={{ p: 1.5 }}>
+        <Box>
+          <SidebarLogo/>
+        </Box>
         <Button fullWidth variant="contained" startIcon={<AddIcon />} onClick={onNew}>
           New chat
         </Button>

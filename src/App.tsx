@@ -83,7 +83,7 @@ export default function App() {
                 </IconButton>
               )}
               <Typography variant="h6" sx={{ flex: 1, fontSize: 17, fontWeight: 600 }}>
-                Chat kit
+                Pebble AI 
               </Typography>
               <Chip size="small" label={provider.name} variant="outlined" />
             </Toolbar>
